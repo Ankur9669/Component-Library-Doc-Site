@@ -1,0 +1,26 @@
+/* This file would contain all the imports to other css files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("./NavBar/navbar.css");
+@import url("./Sidebar/sidebar.css");
+@import url("./Home/index.css");
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #2D3092;
+    --secondary-color: #1E2063;
+    --background-color: #F7FAFB;
+    --primary-text-color: #323232;
+}
+button{
+    border: none;
+}
+body{
+    background-color: var(--background-color);
+    font-family: poppins;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
