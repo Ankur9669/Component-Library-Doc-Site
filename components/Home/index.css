@@ -1,8 +1,8 @@
-/* Hero Sectiom Css start */
+/* Hero Section Css start */
 .hero-container{
+    position: relative;
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 400px;
     margin-top: 10px;
 }
 .hero-section-1{
@@ -30,8 +30,12 @@
     justify-content: space-between;
 }
 .primary-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: poppins;
     background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
     width: 200px;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -46,7 +50,7 @@
 .secondary-btn{
     border: 2px solid var(--primary-color);
     width: 200px;
-    padding: 1rem;
+    padding: 1.19rem;
     border-radius: 0.5rem;
     color: var(--primary-color);
     background-color: transparent;
@@ -82,12 +86,56 @@
 }
 /* Hero Sectiom Css end */
 
+/* Section-1 Css Start */
+.section-1{
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 400px;
+    margin-top: 5rem;
+}
+.section-1-section-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 60px;
+}
+.section-1-section-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  
+}
+.section-1-section-1-heading{
+    font-size: 2.7rem;
+    color: var(--primary-text-color);
+}
+.section-1-section-1-text{
+    color: var(--primary-text-color);
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 1.3rem;
+}
+.home-page-code{
+    width: 90%;
+    height: 400px;
+}
+/* Section-1 Css end */
 @media only screen and (max-width: 850px){
     .hero-section-1-heading{
         font-size: 2.1rem;
     }
     .hero-section-1-sub-heading{
         color: var(--primary-text-color);
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1.3rem;
+    }
+    .section-1-section-1-heading{
+        font-size: 2.1rem;
+    }
+    .section-1-section-1-text{
         font-size: 1rem;
         margin-top: 1rem;
         margin-bottom: 1.3rem;
@@ -132,6 +180,10 @@
         margin-right: 20px;
         margin-top: 10px;
     }
+    .section-1{
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+    }
     .hero-section-1-heading{
         font-size: 2.1rem;
     }
@@ -157,5 +209,21 @@
         width: 100%;
         max-width: 450px;
         margin: auto;
+    }
+    .section-1-section-1{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .section-1-section-2{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin-top: 30px;
+        
     }
 }

@@ -12,57 +12,298 @@
     <!-- NavBar Start -->
     <nav class="navbar">
       <div>
-        <img alt = "hamburger-icon" src = "../images/hamburger.svg" class = "hamburger-icon" id = "hamburger-icon"/>
+        <img
+          alt="hamburger-icon"
+          src="../images/hamburger.svg"
+          class="hamburger-icon"
+          id="hamburger-icon"
+        />
       </div>
       <div class="logo-container">
         <div class="logo">
-          <img class = "logo-image" alt = "logo-image" src = "../images/blob.svg"></img>
+          <img class="logo-image" alt="logo-image" src="../images/blob.svg" />
           <span class="logo-text">neat</span>
           UI
         </div>
       </div>
       <div class="nav-items-container">
-        <a class = "nav-item" href = "../Home/index.html">Home</a>
-        <a class = "nav-item" >Documentation</a>
+        <a class="nav-item" href="../Home/index.html">Home</a>
+        <a class="nav-item">Documentation</a>
       </div>
     </nav>
     <!-- NavBar End -->
     <!-- Mobile Sidebar Start -->
-    <div class = "nav-sidebar-mobile" id = "nav-sidebar-mobile">
-      <img alt = "close-icon" src = "../images/close-icon.svg" class = "close-icon" id = "close-icon"/>
-      <div class = "sidebar-items-container-mobile">
-        <a class = "nav-item-mobile page">Home</a>
-        <a class = "nav-item-mobile page">Documentation</a>
-        <a class = "nav-item-mobile">Alerts</a>
-        <a class = "nav-item-mobile">Badges</a>
-        <a class = "nav-item-mobile">Home</a>
-        <a class = "nav-item-mobile">Documentation</a>
-        <a class = "nav-item-mobile">Alerts</a>
-        <a class = "nav-item-mobile">Badges</a>
-        <a class = "nav-item-mobile">Home</a>
-        <a class = "nav-item-mobile">Documentation</a>
-        <a class = "nav-item-mobile">Alerts</a>
-        <a class = "nav-item-mobile">Badges</a>
-        <a class = "nav-item-mobile">Home</a>
-        <a class = "nav-item-mobile">Documentation</a>
-        <a class = "nav-item-mobile">Alerts</a>
-        <a class = "nav-item-mobile">Badges</a>
+    <div class="nav-sidebar-mobile" id="nav-sidebar-mobile">
+      <img
+        alt="close-icon"
+        src="../images/close-icon.svg"
+        class="close-icon"
+        id="close-icon"
+      />
+      <div class="sidebar-items-container-mobile">
+        <a class="nav-item-mobile page">Home</a>
+        <a class="nav-item-mobile page">Documentation</a>
+        <a class="nav-item-mobile">Alerts</a>
+        <a class="nav-item-mobile">Badges</a>
+        <a class="nav-item-mobile">Home</a>
+        <a class="nav-item-mobile">Documentation</a>
+        <a class="nav-item-mobile">Alerts</a>
+        <a class="nav-item-mobile">Badges</a>
+        <a class="nav-item-mobile">Home</a>
+        <a class="nav-item-mobile">Documentation</a>
+        <a class="nav-item-mobile">Alerts</a>
+        <a class="nav-item-mobile">Badges</a>
+        <a class="nav-item-mobile">Home</a>
+        <a class="nav-item-mobile">Documentation</a>
+        <a class="nav-item-mobile">Alerts</a>
+        <a class="nav-item-mobile">Badges</a>
       </div>
     </div>
     <!-- Mobile Sidebar End -->
 
-    <!-- Sidebar Start -->
-    <div class = "sidebar">
-      <div class = "sidebar-items-container-mobile">
-        <p class = "sidebar-item heading">Components</p>
-        <a class = "nav-item-mobile">Alerts</a>
-        <a class = "nav-item-mobile">Alerts</a>
-        <a class = "nav-item-mobile">Alerts</a>
-        <a class = "nav-item-mobile">Badges</a>
+    <main class="documentation-container">
+      <!-- Sidebar Start -->
+      <div class="sidebar">
+        <div class="sidebar-items-container-mobile">
+          <p class="sidebar-item heading">Components</p>
+          <a class="nav-item-mobile">Alerts</a>
+          <a class="nav-item-mobile">Alerts</a>
+          <a class="nav-item-mobile">Alerts</a>
+          <a class="nav-item-mobile">Badges</a>
+        </div>
       </div>
-    </div>
-    <!--Sidebar End-->
-    <script src = "../Navbar/navbar.js"></script>
-  </body>
+      <!--Sidebar End-->
 
+      <section class="components-container">
+        <!-- Alerts section -->
+        <section class="component-section">
+          <h4 class="component-heading">Alerts</h4>
+          <p class="component-sub-heading">
+            Alerts are used to attract user's attention for important
+            information without interrupting the user's flow.
+          </p>
+          <p class="component-sub-heading-bold">
+            Example of Alert Bar without close button
+          </p>
+          <p class="component-text">
+            Alerts are available in 5 types- success alert, error alert, warning
+            alert, primary alert, secondary alert. To use this alert just use
+            class name <span class="highlight-text">alert-box</span> and also
+            add class according to
+            <span class="highlight-text"
+              >alert type- alert-primary, alert-secondary, alert-danger,
+              alert-success, alert-warning</span
+            >. (e.g.class="alert-box alert-primary"). You can copy html part
+            from below code snippet.
+          </p>
+          <div class="component-example">
+            <!--Primary Alert-->
+            <div class="alert alert-primary">
+              A primary alert example with a text link.
+              <a class="alert-primary-link alert-link">Check it out!</a>
+            </div>
+            <!--Primary Alert-->
+
+            <!--Secondary Alert-->
+            <div class="alert alert-secondary">
+              A secondary alert example!!!!
+            </div>
+            <!--Secondary Alert-->
+
+            <!--Success Alert -->
+            <div class="alert alert-success">A success alert example!!!!</div>
+            <!--Success Alert-->
+
+            <!--Danger Alert -->
+            <div class="alert alert-danger">A danger alert example!!!!</div>
+            <!--Danger Alert-->
+
+            <!--Warning Alert -->
+            <div class="alert alert-warning">A warning alert example!!!!</div>
+            <!--Warning Alert-->
+          </div>
+          <!--Code Example-->
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28224%2C224%2C224%2C0.61%29&t=cobalt&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%250A%253C%21--Primary%2520Alert--%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2520%2520A%2520primary%2520alert%2520example%2520with%2520a%2520text%2520link.%250A%2520%2520%253Ca%2520class%253D%2522alert-primary-link%2520alert-link%2522%253ECheck%2520it%2520out%21%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253C%21--Primary%2520Alert--%253E%250A%250A%253C%21--Secondary%2520Alert--%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253E%250A%2520%2520A%2520secondary%2520alert%2520example%21%21%21%21%250A%253C%252Fdiv%253E%250A%253C%21--Secondary%2520Alert--%253E%250A%250A%253C%21--Success%2520Alert%2520--%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253EA%2520success%2520alert%2520example%21%21%21%21%253C%252Fdiv%253E%250A%253C%21--Success%2520Alert--%253E%250A%250A%253C%21--Danger%2520Alert%2520--%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253EA%2520danger%2520alert%2520example%21%21%21%21%253C%252Fdiv%253E%250A%253C%21--Danger%2520Alert--%253E%250A%250A%253C%21--Warning%2520Alert%2520--%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253EA%2520warning%2520alert%2520example%21%21%21%21%253C%252Fdiv%253E%250A%253C%21--Warning%2520Alert--%253E"
+            class="code-example"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </section>
+        <!--    -->
+
+        <!-- Avatar section -->
+        <section class="component-section">
+          <h4 class="component-heading">Avatar</h4>
+          <p class="component-sub-heading">
+            Avatar can be used to show user's profile picture on profile
+            information page, on navigation bar, in blogs grid items.
+          </p>
+          <p class="component-sub-heading-bold">Example of Image Avatar</p>
+          <p class="component-text">
+            Avatar is available in 4 different sizes. You can use image in
+            Avatar. You need to include class
+            <span class="highlight-text">avatar</span> and for size add class
+            according to size
+            <span class="highlight-text"
+              >avatar-lg-size, avatar-md-size, avatar-sm-size, avatar-xs-size
+              (e.g. class="avatar avatar-lg-size")</span
+            >
+            Don't forget to add Responsive Image class names for img element.
+          </p>
+          <div
+            class="component-example flex-row flex-row-center-vertical flex-gap-1"
+          >
+            <!-- Large Avatar -->
+            <div class="avatar avatar-lg-size">
+              <img
+                class="img-responsive img-round"
+                src="../images/avatar2.jpg"
+                alt="avatar"
+              />
+            </div>
+            <!-- Medium Avatar -->
+            <div class="avatar avatar-md-size">
+              <img
+                class="img-responsive img-round"
+                src="../images/avatar2.jpg"
+                alt="avatar"
+              />
+            </div>
+            <!-- Small Avatar -->
+            <div class="avatar avatar-sm-size">
+              <img
+                class="img-responsive img-round"
+                src="../images/avatar2.jpg"
+                alt="avatar"
+              />
+            </div>
+            <!-- Extra Small Avatar -->
+            <div class="avatar avatar-xs-size">
+              <img
+                class="img-responsive img-round"
+                src="../images/avatar2.jpg"
+                alt="avatar"
+              />
+            </div>
+          </div>
+          <!--Code Example-->
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28224%2C224%2C224%2C0.61%29&t=cobalt&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%250A%253C%21--%2520Large%2520Avatar%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg-size%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fimages%252Favatar2.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Medium%2520Avatar%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md-size%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fimages%252Favatar2.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Small%2520Avatar%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm-size%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fimages%252Favatar2.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Extra%2520Small%2520Avatar%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs-size%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fimages%252Favatar2.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E"
+            class="code-example"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+          <p class="component-sub-heading-bold">Example of Text Avatar</p>
+          <p class="component-text">
+            You can use initial letters of user in Avatar as well. You need to
+            include class <span class="highlight-text">avatar-text</span> along
+            with <span class="highlight-text">avatar</span> and size class.
+            (e.g.
+            <span class="highlight-text"
+              >avatar avatar-lg-size avatar-text</span
+            >
+            avatar-text")
+          </p>
+          <div
+            class="component-example flex-row flex-row-center-vertical flex-gap-1"
+          >
+            <!-- Large Avatar -->
+            <div class="avatar avatar-lg-size avatar-text">AG</div>
+            <!-- Medium Avatar -->
+            <div class="avatar avatar-md-size avatar-text">AG</div>
+            <!-- Small Avatar -->
+            <div class="avatar avatar-sm-size avatar-text">AG</div>
+            <!-- Extra Small Avatar -->
+            <div class="avatar avatar-xs-size avatar-text">AG</div>
+          </div>
+          <!--Code Example-->
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28224%2C224%2C224%2C0.61%29&t=cobalt&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%250A%253C%21--%2520Large%2520Avatar%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg-size%2520avatar-text%2522%253EAG%253C%252Fdiv%253E%250A%253C%21--%2520Medium%2520Avatar%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md-size%2520avatar-text%2522%253EAG%253C%252Fdiv%253E%250A%253C%21--%2520Small%2520Avatar%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm-size%2520avatar-text%2522%253EAG%253C%252Fdiv%253E%250A%253C%21--%2520Extra%2520Small%2520Avatar%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs-size%2520avatar-text%2522%253EAG%253C%252Fdiv%253E"
+            class="code-example"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </section>
+        <!--    -->
+
+        <!--Badges Section-->
+        <section class="component-section">
+          <h4 class="component-heading">Badges</h4>
+          <p class="component-sub-heading">
+            Badges are being used to display a notification count or status
+            information
+          </p>
+          <p class="component-sub-heading-bold">Example of Status Badge</p>
+          <p class="component-text">
+            We have 2 types of status badges that can be integrated with
+            Avatars. You can show colors to show the
+            <span class="highlight-text">online status</span> of user. And to
+            show cart or notification count, you can use
+            <span class="highlight-text">number badge</span>. Check code below
+            to copy the html part as is.
+          </p>
+          <div
+            class="component-example flex-row flex-row-center-vertical flex-gap-1"
+          >
+            <!-- Online Badge -->
+            <div class="avatar avatar-lg-size badge-container">
+              <img
+                class="img-responsive img-round"
+                src="../images/avatar2.jpg"
+                alt="avatar"
+              />
+              <span class="badge badge-online"></span>
+            </div>
+
+            <!-- Offline Badge -->
+            <div class="avatar avatar-md-size badge-container">
+              <img
+                class="img-responsive img-round"
+                src="../images/avatar2.jpg"
+                alt="avatar"
+              />
+              <span class="badge badge-offline"></span>
+            </div>
+            <!-- Away Batch -->
+            <div class="avatar avatar-sm-size badge-container">
+              <img
+                class="img-responsive img-round"
+                src="../images/avatar2.jpg"
+                alt="avatar"
+              />
+              <span class="badge badge-away"></span>
+            </div>
+            <!-- Extra small online Batch -->
+            <div class="avatar avatar-xs-size badge-container">
+              <img
+                class="img-responsive img-round"
+                src="../images/avatar2.jpg"
+                alt="avatar"
+              />
+              <span class="badge badge-online"></span>
+            </div>
+            <!-- Number Badge -->
+            <div class="badge-container">
+              <img
+                class="img-responsive"
+                src="../images/shopping-cart.png"
+                alt="icon"
+              />
+              <span class="badge number-badge">24</span>
+            </div>
+          </div>
+          <!--Code Example-->
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28224%2C224%2C224%2C0.61%29&t=cobalt&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253C%21--%2520Online%2520Badge%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg-size%2520badge-container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fimages%252Favatar2.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-online%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520Offline%2520Badge%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md-size%2520badge-container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fimages%252Favatar2.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-offline%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Away%2520Batch%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm-size%2520badge-container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fimages%252Favatar2.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-away%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Extra%2520small%2520online%2520Batch%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs-size%2520badge-container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fimages%252Favatar2.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-online%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Number%2520Badge%2520--%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fimages%252Fshopping-cart.png%2522%250A%2520%2520%2520%2520alt%253D%2522icon%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520number-badge%2522%253E24%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+            class="code-example"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </section>
+      </section>
+    </main>
+
+    <script src="../Navbar/navbar.js"></script>
+  </body>
 </html>
