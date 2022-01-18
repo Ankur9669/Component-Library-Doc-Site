@@ -1,0 +1,37 @@
+.card{
+    background-color: #ffffff;
+    border-radius: 20px;
+    max-width: 800px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card-horizontal{
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+.card-horizontal .image-container{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.card-horizontal .wrapper{
+    margin-left: 20px;
+    margin-top: 10px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.card-horizontal .text-container h5{
+    margin: 10px 0px 0px 0px;
+}
+.card-horizontal .text-container :nth-child(4){
+    margin: 10px 0px 4px 0px;
+}
+.btn-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 270px;
+    margin-top: 10px;
+}
+.btn-container button{
+    margin: 10px 0px 10px 0px;
+}

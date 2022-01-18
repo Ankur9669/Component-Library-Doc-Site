@@ -8,13 +8,18 @@
 @import url("./Avatar/avatar.css");
 @import url("./Image/image.css");
 @import url("./Badge/badge.css");
+@import url("./Buttons/button.css");
+@import url("./Cards/cards.css");
+@import url("./Typography/typography.css");
 *{
     margin: 0;
     box-sizing: border-box;
 }
 :root{
     --primary-color: #2D3092;
+    --primary-color-dark: #11157d;
     --secondary-color: #1E2063;
+    --secondary-color-dark: #11134f;
     --background-color: #F7FAFB;
     --primary-text-color: #323232;
     --primary-alert-background-color:#7FD2E6;
@@ -29,7 +34,11 @@
     --warning-alert-text-color: #ff9204;
     --dark-green: #024f0c;
     --light-red: #d90715;
+    --dark-red: #ad020d;
     --dark-yellow: #ffb303;
+    --success-button: #28a745;
+    --warning-button: #ffc107;
+    --info-button: #17a2b8;
 }
 button{
     border: none;

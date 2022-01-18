@@ -15,34 +15,6 @@
     margin-left: 30px;
     margin-bottom: 40px;
 }
-.component-heading{
-    font-size: 3rem;
-    color: var(--primary-text-color);
-    font-weight: 600;
-}
-.component-sub-heading{
-    color: var(--primary-text-color);
-    font-size: 1.3rem;
-    font-weight: 400;
-}
-.component-sub-heading-bold{
-    color: var(--primary-text-color);
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-.component-text{
-    color: var(--primary-text-color);
-    font-size: 1.1rem;
-    font-weight: 400;
-    margin: 5px 20px 5px 0px;
-}
-.highlight-text{
-    color: var(--secondary-color);
-    font-size: 1.1rem;
-    font-weight: 600;
-}
 .component-example{
     border: 2px solid var(--secondary-color);
     max-width: 1100px;
@@ -52,7 +24,7 @@
 .code-example{
     width: 95%;
     max-width: 1000px;
-    height: 400px;
+    height: 300px;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 .code-example::-webkit-scrollbar {

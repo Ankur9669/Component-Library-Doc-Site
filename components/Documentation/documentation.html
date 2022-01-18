@@ -7,6 +7,16 @@
     <title>Neat UI</title>
     <!-- Link to stylesheet -->
     <link rel="stylesheet" href="../components.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <!-- NavBar Start -->
@@ -234,14 +244,20 @@
             Badges are being used to display a notification count or status
             information
           </p>
-          <p class="component-sub-heading-bold">Example of Status Badge</p>
+          <p class="component-sub-heading-bold">
+            Example of Status Badge on Avatar
+          </p>
           <p class="component-text">
-            We have 2 types of status badges that can be integrated with
-            Avatars. You can show colors to show the
-            <span class="highlight-text">online status</span> of user. And to
-            show cart or notification count, you can use
-            <span class="highlight-text">number badge</span>. Check code below
-            to copy the html part as is.
+            We have 3 types of status badges that can be integrated with
+            Avatars. You can use class
+            <span class="highlight-text">badge badge-online</span> to show the
+            online status of the user and
+            <span class="highlight-text">badge badge-offline</span> to show the
+            offline status of the user and
+            <span class="highlight-text">badge badge-away</span> to show that
+            user is away. You can also use
+            <span class="highlight-text">badge number-badge</span> to show
+            numbers on the badge.Check code below to copy the html part as is.
           </p>
           <div
             class="component-example flex-row flex-row-center-vertical flex-gap-1"
@@ -283,7 +299,23 @@
               />
               <span class="badge badge-online"></span>
             </div>
-            <!-- Number Badge -->
+          </div>
+          <!--Code Example-->
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28224%2C224%2C224%2C0.61%29&t=cobalt&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253C%21--%2520Online%2520Badge%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg-size%2520badge-container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fimages%252Favatar2.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-online%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520Offline%2520Badge%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md-size%2520badge-container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fimages%252Favatar2.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-offline%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Away%2520Batch%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm-size%2520badge-container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fimages%252Favatar2.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-away%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Extra%2520small%2520online%2520Batch%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs-size%2520badge-container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fimages%252Favatar2.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-online%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+            class="code-example"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+          <p class="component-sub-heading-bold">Example of Badge on Icons</p>
+          <p class="component-text">
+            We have 2 types of badges on icons one with number and one without
+            number. Check code below to copy the html part as is.
+          </p>
+          <div
+            class="component-example flex-row flex-row-center-vertical flex-gap-1"
+          >
+            <!-- Badge with number -->
             <div class="badge-container">
               <img
                 class="img-responsive"
@@ -292,14 +324,182 @@
               />
               <span class="badge number-badge">24</span>
             </div>
+            <!-- Badge without number -->
+            <div class="badge-container">
+              <img
+                class="img-responsive"
+                src="../images/shopping-cart.png"
+                alt="icon"
+              />
+              <span class="badge number-badge"></span>
+            </div>
           </div>
-          <!--Code Example-->
+          <!-- Code Example -->
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28224%2C224%2C224%2C0.61%29&t=cobalt&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253C%21--%2520Online%2520Badge%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg-size%2520badge-container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fimages%252Favatar2.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-online%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520Offline%2520Badge%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md-size%2520badge-container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fimages%252Favatar2.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-offline%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Away%2520Batch%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm-size%2520badge-container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fimages%252Favatar2.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-away%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Extra%2520small%2520online%2520Batch%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs-size%2520badge-container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fimages%252Favatar2.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-online%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Number%2520Badge%2520--%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fimages%252Fshopping-cart.png%2522%250A%2520%2520%2520%2520alt%253D%2522icon%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520number-badge%2522%253E24%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%28224%2C224%2C224%2C0.61%29&t=cobalt&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253C%21--%2520Badge%2520with%2520number%2520--%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fimages%252Fshopping-cart.png%2522%250A%2520%2520%2520%2520alt%253D%2522icon%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520number-badge%2522%253E24%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Badge%2520without%2520number%2520--%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fimages%252Fshopping-cart.png%2522%250A%2520%2520%2520%2520alt%253D%2522icon%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520number-badge%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
             class="code-example"
             sandbox="allow-scripts allow-same-origin"
           >
           </iframe>
+        </section>
+        <!--    -->
+
+        <section class="component-section">
+          <h4 class="component-heading">Buttons</h4>
+          <p class="component-sub-heading">
+            Buttons are also called as call to action. We have range of buttons
+            and their states. You may use a tag or button element, you need to
+            add respective classes, and you are good to go.
+          </p>
+          <p class="component-sub-heading-bold">Example of Solid Buttons</p>
+          <p class="component-sub-heading">
+            For using solid button you can use classes
+            <span class="highlight-text"
+              >button-primary, button-secondary, button-success, button-warning,
+              button-danger, link-primary</span
+            >.
+          </p>
+          <div
+            class="component-example flex-row flex-row-center-vertical flex-gap-1"
+          >
+            <button class="button button-primary">Primary</button>
+            <button class="button button-secondary">Secondary</button>
+            <button class="button button-success">Success</button>
+            <button class="button button-warning">Warning</button>
+            <button class="button button-danger">Danger</button>
+            <button class="link link-primary">Link</button>
+          </div>
+          <!--  Code example  -->
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28224%2C224%2C224%2C0.61%29&t=cobalt&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520button-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522button%2520button-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522button%2520button-success%2522%253ESuccess%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522button%2520button-warning%2522%253EWarning%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522button%2520button-danger%2522%253EDanger%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522link%2520link-primary%2522%253ELink%253C%252Fbutton%253E"
+            class="code-example"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+          <p class="component-sub-heading-bold">Example of Outline Buttons</p>
+          <p class="component-sub-heading">
+            For using outline button you can use classes
+            <span class="highlight-text"
+              >button-outline-primary, button-outline-secondary,
+              button-outline-success, button-outline-warning,
+              button-outline-danger</span
+            >.
+          </p>
+          <div
+            class="component-example flex-row flex-row-center-vertical flex-gap-1"
+          >
+            <button class="button button-outline-primary">Primary</button>
+            <button class="button button-outline-secondary">Secondary</button>
+            <button class="button button-outline-success">Success</button>
+            <button class="button button-outline-warning">Warning</button>
+            <button class="button button-outline-danger">Danger</button>
+          </div>
+          <!-- Code Example -->
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28224%2C224%2C224%2C0.61%29&t=cobalt&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520button-outline-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522button%2520button-outline-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522button%2520button-outline-success%2522%253ESuccess%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522button%2520button-outline-warning%2522%253EWarning%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522button%2520button-outline-danger%2522%253EDanger%253C%252Fbutton%253E"
+            class="code-example"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+
+          <p class="component-sub-heading-bold">
+            Example of Buttons with icons and floating button
+          </p>
+          <p class="component-sub-heading">
+            For using icons with button just put the icon inside the button and
+            for using floating button we can use
+            <span class="highlight-text">button-lg-floating</span> for large
+            floating button and
+            <span class="highlight-text">button-md-floating</span> for medium
+            floating button
+          </p>
+          <div
+            class="component-example flex-row flex-row-center-vertical flex-gap-1"
+          >
+            <button class="button button-primary">
+              <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+              Primary
+            </button>
+            <button class="button button-secondary">
+              <i class="fa fa-cloud-download" aria-hidden="true"></i>
+              Secondary
+            </button>
+            <button class="button button-success">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              Success
+            </button>
+            <button class="button button-warning">
+              <i class="fa fa-folder-open" aria-hidden="true"></i>
+              Warning
+            </button>
+            <button class="button button-danger">
+              <i class="fa fa-users" aria-hidden="true"></i>
+              Danger
+            </button>
+            <button class="button button-lg-floating">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+            <button class="button button-md-floating">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+          </div>
+          <!-- Code Example -->
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28224%2C224%2C224%2C0.61%29&t=cobalt&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520button-primary%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-cart-arrow-down%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520Primary%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522button%2520button-secondary%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-cloud-download%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520Secondary%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522button%2520button-success%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-envelope%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520Success%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522button%2520button-warning%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-folder-open%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520Warning%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522button%2520button-danger%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-users%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520Danger%250A%253C%252Fbutton%253E"
+            class="code-example"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </section>
+        <section class="component-section">
+          <h4 class="component-heading">Cards</h4>
+          <p class="component-sub-heading">
+            Cards are used to show the data which is related.
+          </p>
+          <p class="component-sub-heading-bold">
+            Example of Horizontal Card- Text+Image
+          </p>
+          <div
+            class="component-example flex-row flex-row-center-horizontal flex-gap-1"
+          >
+            <div class="card card-horizontal">
+              <div class="image-container">
+                <img
+                  alt="card-image"
+                  src="../images/avatar2.jpg"
+                  class="img-responsive"
+                />
+              </div>
+              <div class="wrapper">
+                <div class="text-container">
+                  <h5
+                    class="font-medium-large weight-semi-bold primary-text-color"
+                  >
+                    Atomic habits
+                  </h5>
+                  <p class="font-small weight-normal primary-text-color">
+                    Book for building habits
+                  </p>
+                  <p class="font-extra-small weight-normal primary-text-color">
+                    Sold by bookstore
+                  </p>
+                  <p class="font-medium weight-normal primary-text-color">
+                    White and blue printed playsuit with knot detail, has a
+                    shirt collar, sleeveless, button closures
+                  </p>
+                </div>
+                <div class="btn-container">
+                  <button class="button button-primary">
+                    <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                    Primary
+                  </button>
+                  <button class="button button-outline-secondary">
+                    Secondary
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </section>
     </main>

@@ -1,0 +1,58 @@
+.primary-text-color{
+    color: var(--primary-text-color);
+}
+.font-extra-small{
+    font-size: 0.8rem;
+}
+.font-small{
+    font-size: 1rem;
+}
+.font-medium{
+    font-size: 1.1rem;
+}
+.font-medium-large{
+    font-size: 1.3rem;
+}
+.font-large{
+    font-size: 2rem;
+}
+.font-large-large{
+    font-size: 3rem;
+}
+.weight-normal{
+    font-weight: 400;
+}
+.weight-semi-bold{
+    font-weight: 550;
+}
+.weight-bold{
+    font-weight: 600;
+}
+.component-heading{
+    font-size: 3rem;
+    color: var(--primary-text-color);
+    font-weight: 600;
+}
+.component-sub-heading{
+    color: var(--primary-text-color);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.component-sub-heading-bold{
+    color: var(--primary-text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.component-text{
+    color: var(--primary-text-color);
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 5px 20px 5px 0px;
+}
+.highlight-text{
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
