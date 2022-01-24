@@ -11,6 +11,7 @@
 @import url("./Buttons/button.css");
 @import url("./Cards/cards.css");
 @import url("./Typography/typography.css");
+@import url("./Inputs/inputs.css");
 *{
     margin: 0;
     box-sizing: border-box;
@@ -47,6 +48,8 @@ body{
     background-color: var(--background-color);
     font-family: poppins;
     overflow-x: hidden;
+    max-width: 2000px;
+    margin: auto;
 }
 a{
     text-decoration: none;
