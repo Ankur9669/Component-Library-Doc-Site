@@ -1,6 +1,9 @@
 .primary-text-color{
     color: var(--primary-text-color);
 }
+.secondary-text-color{
+    color: var(--secondary-text-color)
+}
 .font-extra-small{
     font-size: 0.8rem;
 }
@@ -26,7 +29,10 @@
     font-weight: 550;
 }
 .weight-bold{
-    font-weight: 600;
+    font-weight: 700;
+}
+.strike-through{
+    text-decoration: line-through;
 }
 .component-heading{
     font-size: 3rem;
@@ -54,5 +60,39 @@
 .highlight-text{
     color: var(--secondary-color);
     font-size: 1.1rem;
+    font-weight: 600;
+}
+.centered-text{
+    display: block;
+    text-align: center;
+}
+.h1{
+    color: var(--primary-text-color);
+    font-size: 4rem;
+    font-weight: 600;
+}
+.h2{
+    color: var(--primary-text-color);
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.h3{
+    color: var(--primary-text-color);
+    font-size: 3rem;
+    font-weight: 600;
+}
+.h4{
+    color: var(--primary-text-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.h5{
+    color: var(--primary-text-color);
+    font-size: 2rem;
+    font-weight: 600;
+}
+.h6{
+    color: var(--primary-text-color);
+    font-size: 1.5rem;
     font-weight: 600;
 }

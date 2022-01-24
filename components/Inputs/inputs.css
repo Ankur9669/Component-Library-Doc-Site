@@ -16,7 +16,19 @@
 .input-box input:focus{
     outline: none;
     border: 2px solid #000F61;
-  }
+}
+.input-box .success{
+    outline: none;
+    border: 2px solid var(--dark-green);
+}
+.input-box .warning{
+    outline: none;
+    border: 2px solid var(--dark-yellow);
+}
+.input-box .error{
+    outline: none;
+    border: 2px solid var(--dark-red);
+}
 .input-box label{
     position: absolute;
     color: #282828;
@@ -33,8 +45,8 @@
     color: var(--dark-red);
 }
 .input-box.active .input-label,
-  .input:focus + .input-label,
-  .input:active + .input-label{
+.input:focus + .input-label,
+.input:active + .input-label{
     top: -6px;
     left: 12px;
     background-color: white;
