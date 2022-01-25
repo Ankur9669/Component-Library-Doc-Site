@@ -7,6 +7,7 @@
     <title>Neat UI</title>
     <!-- Link to stylesheet -->
     <link rel="stylesheet" href="../components.css" />
+    <link rel="icon" type="image/x-icon" href="../images/blob.svg" />
     <link
       rel="stylesheet"
       href="path/to/font-awesome/css/font-awesome.min.css"
@@ -973,6 +974,162 @@
           >
           </iframe>
         </section>
+        <!--     -->
+
+        <!--  Lists   -->
+        <section class="component-section">
+          <h4 class="component-heading">Lists</h4>
+          <!--  Unordered Lists  -->
+          <p class="component-sub-heading">
+            Lists are used in various places such as navigation bar, article
+            page etc.
+          </p>
+          <p class="component-sub-heading-bold">Example of Unordered Lists</p>
+          <p class="component-sub-heading">
+            We have 4 types of lists the default one than the list with circular
+            bullets, list with square bullets and list with no bullets.
+          </p>
+          <div
+            class="component-example flex-row flex-row-center-vertical flex-gap-1"
+          >
+            <ul>
+              <li>Item-1</li>
+              <li>Item-2</li>
+              <li>Item-3</li>
+            </ul>
+            <ul class="list-style-circle">
+              <li>Item-1</li>
+              <li>Item-2</li>
+              <li>Item-3</li>
+            </ul>
+            <ul class="list-style-square">
+              <li>Item-1</li>
+              <li>Item-2</li>
+              <li>Item-3</li>
+            </ul>
+            <ul class="list-style-none">
+              <li>Item-1</li>
+              <li>Item-2</li>
+              <li>Item-3</li>
+            </ul>
+          </div>
+          <!--  Code Example  -->
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28224%2C224%2C224%2C1%29&t=cobalt&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253C%21--%2520This%2520is%2520default%2520list%2520--%253E%250A%253Cul%253E%250A%2520%2520%253Cli%253EItem-1%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-2%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list-style-circle%2522%253E%250A%2520%2520%253Cli%253EItem-1%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-2%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list-style-square%2522%253E%250A%2520%2520%253Cli%253EItem-1%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-2%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list-style-none%2522%253E%250A%2520%2520%253Cli%253EItem-1%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-2%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Ful%253E"
+            class="code-example"
+            sandbox="allow-scripts allow-same-origin"
+            loading="lazy"
+          >
+          </iframe>
+
+          <!--     -->
+
+          <!--  Ordered Lists  -->
+          <p class="component-sub-heading-bold">Example of Ordered Lists</p>
+          <p class="component-sub-heading">
+            We have 4 types of lists the default one than the list with circular
+            bullets, list with square bullets and list with no bullets.
+          </p>
+          <div
+            class="component-example flex-row flex-row-center-vertical flex-gap-1"
+          >
+            <ol>
+              <li>List item with numbers</li>
+              <li>List item with numbers</li>
+              <li>List item with numbers</li>
+            </ol>
+            <ol class="list-style-decimal-leading-zero">
+              <li>List item with numbers</li>
+              <li>List item with numbers</li>
+              <li>List item with numbers</li>
+            </ol>
+            <ol class="list-style-lower-alphabets">
+              <li>List item with lower alphabets</li>
+              <li>List item with lower alphabets</li>
+              <li>List item with lower alphabets</li>
+            </ol>
+            <ol class="list-style-upper-alphabets">
+              <li>List item with upper alphabets</li>
+              <li>List item with upper alphabets</li>
+              <li>List item with upper alphabets</li>
+            </ol>
+            <ol class="list-style-lower-roman">
+              <li>List item with lower roman</li>
+              <li>List item with lower roman</li>
+              <li>List item with lower roman</li>
+            </ol>
+            <ol class="list-style-upper-roman">
+              <li>List item with upper roman</li>
+              <li>List item with upper roman</li>
+              <li>List item with upper roman</li>
+            </ol>
+          </div>
+          <!-- Code Example -->
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28224%2C224%2C224%2C1%29&t=cobalt&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253C%21--%2520This%2520is%2520default%2520list%2520--%253E%250A%253Col%253E%250A%2520%2520%253Cli%253EList%2520item%2520with%2520numbers%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item%2520with%2520numbers%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item%2520with%2520numbers%253C%252Fli%253E%250A%253C%252Fol%253E%250A%253Col%2520class%253D%2522list-style-decimal-leading-zero%2522%253E%250A%2520%2520%253Cli%253EList%2520item%2520with%2520numbers%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item%2520with%2520numbers%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item%2520with%2520numbers%253C%252Fli%253E%250A%253C%252Fol%253E%250A%253Col%2520class%253D%2522list-style-lower-alphabets%2522%253E%250A%2520%2520%253Cli%253EList%2520item%2520with%2520lower%2520alphabets%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item%2520with%2520lower%2520alphabets%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item%2520with%2520lower%2520alphabets%253C%252Fli%253E%250A%253C%252Fol%253E%250A%253Col%2520class%253D%2522list-style-upper-alphabets%2522%253E%250A%2520%2520%253Cli%253EList%2520item%2520with%2520upper%2520alphabets%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item%2520with%2520upper%2520alphabets%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item%2520with%2520upper%2520alphabets%253C%252Fli%253E%250A%253C%252Fol%253E%250A%253Col%2520class%253D%2522list-style-lower-roman%2522%253E%250A%2520%2520%253Cli%253EList%2520item%2520with%2520lower%2520roman%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item%2520with%2520lower%2520roman%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item%2520with%2520lower%2520roman%253C%252Fli%253E%250A%253C%252Fol%253E%250A%253Col%2520class%253D%2522list-style-upper-roman%2522%253E%250A%2520%2520%253Cli%253EList%2520item%2520with%2520upper%2520roman%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item%2520with%2520upper%2520roman%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item%2520with%2520upper%2520roman%253C%252Fli%253E%250A%253C%252Fol%253E"
+            class="code-example"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+          <!--    -->
+
+          <!--   Inline Lists   -->
+          <p class="component-sub-heading-bold">Example of Inline Lists</p>
+          <div
+            class="component-example flex-row flex-row-center-vertical flex-gap-1"
+          >
+            <ul class="list-style-inline list-style-circle">
+              <li>Inline List</li>
+              <li>Inline List</li>
+              <li>Inline List</li>
+            </ul>
+          </div>
+          <!-- Code Example -->
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28224%2C224%2C224%2C1%29&t=cobalt&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cul%2520class%253D%2522list-style-inline%2520list-style-circle%2522%253E%250A%2520%2520%253Cli%253EInline%2520List%253C%252Fli%253E%250A%2520%2520%253Cli%253EInline%2520List%253C%252Fli%253E%250A%2520%2520%253Cli%253EInline%2520List%253C%252Fli%253E%250A%253C%252Ful%253E"
+            class="code-example"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </section>
+        <!--     -->
+
+        <!--  Modal   -->
+        <section class="component-section">
+          <h4 class="component-heading">Modal</h4>
+          <p class="component-sub-heading">
+            Modals are used to show some important information to the user and
+            they are closed only when the user selects some option.
+          </p>
+          <p class="component-sub-heading-bold">Example of Modal</p>
+          <p class="component-sub-heading">
+            We have 4 types of lists the default one than the list with circular
+            bullets, list with square bullets and list with no bullets.
+          </p>
+          <div
+            class="component-example flex-row flex-row-center-vertical flex-gap-1"
+          >
+            <button class="button button-primary">Live Demo</button>
+            <div class="modal-container">
+              <div class="modal-content">
+                <div class="modal-title">
+                  <h4 class="font-medium-large weight-semi-bold">
+                    Modal Title
+                  </h4>
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <p class="font-medium weight-normal modal-text">
+                  This is the text of the modal This is the text of the modal
+                </p>
+                <div class="modal-btn-container">
+                  <button class="button button-outline-primary">Cancel</button>
+                  <button class="button button-primary">Ok</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--     -->
       </section>
     </main>
 
