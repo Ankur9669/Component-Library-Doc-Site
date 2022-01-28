@@ -1,0 +1,48 @@
+.toast{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-width: 350px;
+    max-width: 500px;
+    margin: 0px 1rem 0px 1rem;
+    font-size: 1rem; 
+    padding: 1rem;
+    border-radius: 0.4rem;
+    z-index: 99;
+}
+.toast-success{
+    background-color: var(--success-alert-background-color);
+    color: var(--success-alert-text-color);
+}
+.toast-error{
+    background-color: var(--light-red);
+    color: white;
+}
+.toast-warning{
+    background-color: var(--dark-yellow);
+    color: black;
+}
+.toast span{
+    flex: 1;
+}
+.toast i{
+   cursor: pointer;
+   font-size: 1.5rem;
+}
+/* CSS for positioning of toasts */
+.bottom-center{
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.bottom-left{
+    position: fixed;
+    bottom: 1rem;
+    left: 10px;
+}
+.bottom-right{
+    position: fixed;
+    bottom: 1rem;
+    right: 10px;
+}

@@ -1,6 +1,6 @@
 .modal-container{
     position: fixed;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     top: 0;
@@ -43,6 +43,7 @@
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    border-top: 1px solid black;
 }
 .modal-btn-container button{
     margin: 0.5rem;

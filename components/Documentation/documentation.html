@@ -1102,38 +1102,339 @@
             they are closed only when the user selects some option.
           </p>
           <p class="component-sub-heading-bold">Example of Modal</p>
-          <p class="component-sub-heading">
-            We have 4 types of lists the default one than the list with circular
-            bullets, list with square bullets and list with no bullets.
-          </p>
           <div
             class="component-example flex-row flex-row-center-vertical flex-gap-1"
           >
-            <button class="button button-primary">Live Demo</button>
-            <div class="modal-container">
+            <button class="button button-primary" id="modal-button">
+              Live Demo
+            </button>
+            <div class="modal-container" id="modal-container">
               <div class="modal-content">
                 <div class="modal-title">
                   <h4 class="font-medium-large weight-semi-bold">
                     Modal Title
                   </h4>
-                  <i class="fa fa-times" aria-hidden="true"></i>
+                  <i
+                    class="fa fa-times"
+                    aria-hidden="true"
+                    id="modal-close-icon"
+                  ></i>
                 </div>
                 <p class="font-medium weight-normal modal-text">
-                  This is the text of the modal This is the text of the modal
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                  rhoncus maximus congue. Donec nec libero eros. Nulla porta ex
+                  in sem viverra tincidunt ac id nisi
                 </p>
                 <div class="modal-btn-container">
-                  <button class="button button-outline-primary">Cancel</button>
-                  <button class="button button-primary">Ok</button>
+                  <button
+                    class="button button-outline-primary"
+                    id="modal-cancel-button"
+                  >
+                    Cancel
+                  </button>
+                  <button class="button button-primary" id="modal-ok-button">
+                    Ok
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </section>
         <!--     -->
+
+        <!--  Toast   -->
+        <section class="component-section">
+          <h4 class="component-heading">Toast</h4>
+          <p class="component-sub-heading">
+            Toasts are used to show pop up messages to the user. We have 3 types
+            of toasts, success toast, warning toast, error toast. For using
+            these toast use classes
+            <span class="highlight-text">toast toast-success</span>. For
+            positioning of the toast we have 3 classes
+            <span class="highlight-text">bottom-center</span> which would
+            position toast in center,
+            <span class="highlight-text">bottom-left</span> which would position
+            toast in left,
+            <span class="highlight-text">bottom-right</span> which would
+            position toast in right.
+          </p>
+          <p class="component-sub-heading-bold">Example of Toasts</p>
+          <div class="component-example flex-column flex-gap-1">
+            <!--  Success Toast   -->
+            <div class="toast toast-success">
+              <span>Success Toast Example</span>
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <!--  Error Toast   -->
+            <div class="toast toast-error">
+              <span>Error Toast Example</span>
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <!--  Warning Toast   -->
+            <div class="toast toast-warning">
+              <span>Warning Toast Example</span>
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+
+            <!--Just for documentation purpose i had used inline styling-->
+            <!--These toasts would be hidden until the user clicks the demo button-->
+            <div
+              class="toast toast-success bottom-center"
+              id="toast-center"
+              style="display: none"
+            >
+              <span>Success Toast Example</span>
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div
+              class="toast toast-error bottom-left"
+              id="toast-left"
+              style="display: none"
+            >
+              <span>Error Toast Example</span>
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div
+              class="toast toast-warning bottom-right"
+              id="toast-right"
+              style="display: none"
+            >
+              <span>Warning Toast Example</span>
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <!--Hidden Toasts End-->
+          </div>
+
+          <!--Code Example-->
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28224%2C224%2C224%2C1%29&t=cobalt&wt=none&l=htmlmixed&width=922.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253C%21--%2520%2520Success%2520Toast%2520%2520%2520--%253E%250A%253Cdiv%2520class%253D%2522toast%2520toast-success%2522%253E%250A%2520%2520%253Cspan%253ESuccess%2520Toast%2520Example%253C%252Fspan%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-times%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520%2520Error%2520Toast%2520%2520%2520--%253E%250A%253Cdiv%2520class%253D%2522toast%2520toast-error%2522%253E%250A%2520%2520%253Cspan%253EError%2520Toast%2520Example%253C%252Fspan%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-times%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520%2520Warning%2520Toast%2520%2520%2520--%253E%250A%253Cdiv%2520class%253D%2522toast%2520toast-warning%2522%253E%250A%2520%2520%253Cspan%253EWarning%2520Toast%2520Example%253C%252Fspan%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-times%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A"
+            class="code-example"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+          <div class="component-example flex-row flex-gap-1">
+            <button class="button button-primary" id="toast-left-button">
+              Left Demo
+            </button>
+            <button class="button button-primary" id="toast-center-button">
+              Center Demo
+            </button>
+            <button class="button button-primary" id="toast-right-button">
+              Right Demo
+            </button>
+          </div>
+        </section>
+        <!--    -->
+
+        <section class="component-section">
+          <h4 class="component-heading">Simplified Grid</h4>
+          <p class="component-sub-heading">
+            If you want to divide the page into parts grid comes very handy.
+          </p>
+          <p class="component-sub-heading-bold">
+            Example of Simplified 50-50 Grid
+          </p>
+          <div class="component-example flex-column flex-gap-1">
+            <!--Grid 50-50 Start-->
+            <div class="grid-50-50">
+              <!-- Vertical Card Without Dismiss -->
+              <div>
+                <img
+                  src="https://picsum.photos/500/500"
+                  alt="responsive-image"
+                  class="img-responsive"
+                  loading="lazy"
+                />
+              </div>
+              <!--   -->
+              <!-- Vertical Card Without Dismiss -->
+              <div class="card card-vertical">
+                <div class="image-container">
+                  <img
+                    alt="card-image"
+                    src="../images/avatar2.jpg"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="wrapper">
+                  <div class="text-container">
+                    <h5
+                      class="font-medium-large weight-semi-bold primary-text-color"
+                    >
+                      Atomic habits
+                    </h5>
+                    <p class="font-small weight-normal primary-text-color">
+                      Book for building habits
+                    </p>
+                    <p
+                      class="font-extra-small weight-normal primary-text-color"
+                    >
+                      Sold by bookstore
+                    </p>
+                    <p class="font-medium weight-normal primary-text-color">
+                      White and blue printed playsuit with knot detail, has a
+                      shirt collar, sleeveless, button closures
+                    </p>
+                  </div>
+                  <div class="btn-container">
+                    <button class="button button-primary">
+                      <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                      Buy Now
+                    </button>
+                    <button class="button button-outline-secondary">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Grid 50-50 End-->
+          </div>
+          <!--Code Example-->
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28224%2C224%2C224%2C1%29&t=cobalt&wt=none&l=htmlmixed&width=766.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253C%21--Grid%252050-50%2520Start--%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-50-50%2522%253E%250A%2520%2520%2520%2520%253C%21--%2520Vertical%2520Card%2520Without%2520Dismiss%2520--%253E%250A%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F500%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522responsive-image%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%21--%2520%2520%2520--%253E%250A%2520%2520%2520%2520%253C%21--%2520Vertical%2520Card%2520Without%2520Dismiss%2520--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520card-vertical%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522image-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522card-image%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522..%252Fimages%252Favatar2.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522font-medium-large%2520weight-semi-bold%2520primary-text-color%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Atomic%2520habits%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522font-small%2520weight-normal%2520primary-text-color%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Book%2520for%2520building%2520habits%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522font-extra-small%2520weight-normal%2520primary-text-color%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Sold%2520by%2520bookstore%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522font-medium%2520weight-normal%2520primary-text-color%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520White%2520and%2520blue%2520printed%2520playsuit%2520with%2520knot%2520detail%252C%2520has%2520a%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520shirt%2520collar%252C%2520sleeveless%252C%2520button%2520closures%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520button-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-cart-arrow-down%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Buy%2520Now%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520button-outline-secondary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Add%2520to%2520cart%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E"
+            class="code-example"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+          <p class="component-sub-heading-bold">
+            Example of Simplified 70-30 Grid
+          </p>
+          <div class="component-example flex-column flex-gap-1">
+            <!--Grid 70-30 Start-->
+            <div class="grid-70-30">
+              <!-- Inline Styling is only used for documentation purpose -->
+              <div style="height: 400px">
+                <img
+                  src="https://picsum.photos/500/500"
+                  alt="responsive-image"
+                  class="img-responsive"
+                  loading="lazy"
+                />
+              </div>
+              <!-- Inline Styling is only used for documentation purpose -->
+              <div style="height: 400px">
+                <img
+                  src="https://picsum.photos/500/500"
+                  alt="responsive-image"
+                  class="img-responsive"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <!--Grid 70-30 End-->
+          </div>
+          <!--Code Example-->
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28224%2C224%2C224%2C1%29&t=cobalt&wt=none&l=htmlmixed&width=766.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253C%21--Grid%252070-30%2520Start--%253E%250A%253Cdiv%2520class%253D%2522grid-70-30%2522%253E%250A%2520%2520%253C%21--%2520Inline%2520Styling%2520is%2520only%2520used%2520for%2520documentation%2520purpose%2520--%253E%250A%2520%2520%253Cdiv%2520style%253D%2522height%253A%2520400px%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F500%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522responsive-image%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%21--%2520Inline%2520Styling%2520is%2520only%2520used%2520for%2520documentation%2520purpose%2520--%253E%250A%2520%2520%253Cdiv%2520style%253D%2522height%253A%2520400px%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F500%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522responsive-image%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+            class="code-example"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+          <p class="component-sub-heading-bold">
+            Example of Simplified 30-70 Grid
+          </p>
+          <div class="component-example flex-column flex-gap-1">
+            <!--Grid 70-30 Start-->
+            <div class="grid-30-70">
+              <!-- Inline Styling is only used for documentation purpose -->
+              <div style="height: 400px">
+                <img
+                  src="https://picsum.photos/500/500"
+                  alt="responsive-image"
+                  class="img-responsive"
+                  loading="lazy"
+                />
+              </div>
+              <!-- Inline Styling is only used for documentation purpose -->
+              <div style="height: 400px">
+                <img
+                  src="https://picsum.photos/500/500"
+                  alt="responsive-image"
+                  class="img-responsive"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <!--Grid 70-30 End-->
+          </div>
+          <!--Code Example-->
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28224%2C224%2C224%2C1%29&t=cobalt&wt=none&l=htmlmixed&width=766.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253C%21--Grid%252070-30%2520Start--%253E%250A%253Cdiv%2520class%253D%2522grid-30-70%2522%253E%250A%2520%2520%253C%21--%2520Inline%2520Styling%2520is%2520only%2520used%2520for%2520documentation%2520purpose%2520--%253E%250A%2520%2520%253Cdiv%2520style%253D%2522height%253A%2520400px%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F500%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522responsive-image%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%21--%2520Inline%2520Styling%2520is%2520only%2520used%2520for%2520documentation%2520purpose%2520--%253E%250A%2520%2520%253Cdiv%2520style%253D%2522height%253A%2520400px%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F500%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522responsive-image%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+            class="code-example"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+          <p class="component-sub-heading-bold">Example of 3 items in a Grid</p>
+          <div class="component-example flex-column flex-gap-1">
+            <!-- Grid 3 items start -->
+            <div class="grid-3-items">
+              <!-- Inline Styling is only used for documentation purpose -->
+              <div style="height: 400px">
+                <img
+                  src="https://picsum.photos/500/500"
+                  alt="responsive-image"
+                  class="img-responsive"
+                  loading="lazy"
+                />
+              </div>
+              <!-- Inline Styling is only used for documentation purpose -->
+              <div style="height: 400px">
+                <img
+                  src="https://picsum.photos/500/500"
+                  alt="responsive-image"
+                  class="img-responsive"
+                  loading="lazy"
+                />
+              </div>
+              <!-- Inline Styling is only used for documentation purpose -->
+              <div style="height: 400px">
+                <img
+                  src="https://picsum.photos/500/500"
+                  alt="responsive-image"
+                  class="img-responsive"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <!-- Grid 3 items end -->
+          </div>
+          <!-- Code example -->
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28224%2C224%2C224%2C1%29&t=cobalt&wt=none&l=htmlmixed&width=766.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253C%21--%2520Grid%25203%2520items%2520start%2520--%253E%250A%253Cdiv%2520class%253D%2522grid-3-items%2522%253E%250A%2520%2520%253C%21--%2520Inline%2520Styling%2520is%2520only%2520used%2520for%2520documentation%2520purpose%2520--%253E%250A%2520%2520%253Cdiv%2520style%253D%2522height%253A%2520400px%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F500%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522responsive-image%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%21--%2520Inline%2520Styling%2520is%2520only%2520used%2520for%2520documentation%2520purpose%2520--%253E%250A%2520%2520%253Cdiv%2520style%253D%2522height%253A%2520400px%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F500%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522responsive-image%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%21--%2520Inline%2520Styling%2520is%2520only%2520used%2520for%2520documentation%2520purpose%2520--%253E%250A%2520%2520%253Cdiv%2520style%253D%2522height%253A%2520400px%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F500%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522responsive-image%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Grid%25203%2520items%2520end%2520--%253E"
+            class="code-example"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </section>
+
+        <section class="component-section">
+          <h4 class="component-heading">Rating Bar</h4>
+          <p class="component-sub-heading">
+            It is used to take the user feedback on the prduct
+          </p>
+          <p class="component-sub-heading-bold">Example of Rating-Bar</p>
+          <div class="component-example flex-column flex-gap-1">
+            <div class="rating-bar">
+              <i class="fa fa-star" aria-hidden="true" id="rating-star-1"></i>
+              <i class="fa fa-star" aria-hidden="true" id="rating-star-2"></i>
+              <i class="fa fa-star" aria-hidden="true" id="rating-star-3"></i>
+              <i class="fa fa-star" aria-hidden="true" id="rating-star-4"></i>
+              <i class="fa fa-star" aria-hidden="true" id="rating-star-5"></i>
+            </div>
+            <button class="button button-primary" id="reset-rating-button">
+              Reset Rating
+            </button>
+            <span id="rating-star-info">0 stars</span>
+          </div>
+        </section>
       </section>
     </main>
 
     <script src="../Navbar/navbar.js"></script>
     <script src="../Inputs/inputs.js"></script>
+    <script src="../Modal/modal.js"></script>
+    <script src="../Toasts/toast.js"></script>
+    <script src="../RatingBar/rating-bar.js"></script>
   </body>
 </html>

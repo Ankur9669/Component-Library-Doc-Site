@@ -1,0 +1,10 @@
+.rating-bar{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.rating-bar i{
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: gray;
+}
